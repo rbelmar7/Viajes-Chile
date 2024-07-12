@@ -1,12 +1,15 @@
-$(window).scroll(function () {
-    var navbar = $('.navbar');
-    if ($(window).scrollTop() > 50) {
-        navbar.addClass('scrolled');
-    } else {
-        navbar.removeClass('scrolled');
-    }
-});
 $(document).ready(function () {
+
+    $(window).scroll(function () {
+        var navbar = $('.navbar');
+        if ($(window).scrollTop() > 50) {
+            navbar.addClass('scrolled');
+        } else {
+            navbar.removeClass('scrolled');
+        }
+    });
+
+  
     $('a.nav-link').on('click', function (event) {
         if (this.hash !== "") {
             event.preventDefault();

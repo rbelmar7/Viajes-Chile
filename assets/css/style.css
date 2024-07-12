@@ -30,3 +30,24 @@ body{
 footer{
     background-color: 	#66545e
 }
+
+.icon-box {
+    position: relative;
+    border: 1px  #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #333;
+}
+
+
+@media (max-width: 768px) {
+    .icon {
+        display: none;
+    }
+}
